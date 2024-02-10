@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Navbar from './Navbar/Navbar';
+import Home from './Home';
+import Report1 from './PBI-COMPONENT/Report1';
+import Report2 from './PBI-COMPONENT/Report2';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/report1' element={<Report1 />} />
+        <Route path='/report2' element={<Report2 />} />
+      </Routes>
     </div>
   );
 }
