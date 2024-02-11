@@ -1,28 +1,39 @@
-.home{
-  height: 30rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.home {
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.txt{
-  font-weight: 600;
-  text-align: center;
+.txt {
+    font-weight: 600;
+    text-align: center;
 }
 
-
-
-.report{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
+.report {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
 }
 
-.report-size{
-  margin-top: 2rem;
-  width: 100%;
-  height: 500px;
+.report-size {
+    margin-top: 2rem;
+    width: 100%;
+    height: 350px;
+}
+.controls {
+    display: flex;
+    margin-top: 2rem;
+    flex: 1 1 auto;
+    gap: 2rem;
+    align-items: center;
+    width: 70%;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
 }
